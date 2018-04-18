@@ -15,7 +15,7 @@
 			<li>memberStreet</li>
 			<li>memberState</li>
 			<li>memberZip</li>
-			<li>member Fee</li>
+			<li>memberFee</li>
 		</ul>
 		<h4> Training Entity </h4>
 		<ul>
