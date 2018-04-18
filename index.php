@@ -9,27 +9,39 @@
 		<h2>Conceptual Model</h2><br>
 		<h4>Member Entity</h4>
 		<ul>
-			<li>memberid primary key</li>
-			<li>memberlastName</li>
-			<li>memberfirstName</li>
-			<li>memberstreet</li>
-			<li>membercity</li>
-			<li>memberstate</li>
-			<li>memberzip</li>
-			<li>member fee</li>
+			<li>memberIDPrimaryKey</li>
+			<li>memberLastName</li>
+			<li>memberFirstName</li>
+			<li>memberStreet</li>
+			<li>memberState</li>
+			<li>memberZip</li>
+			<li>member Fee</li>
 		</ul>
-		<h4> Training </h4>
+		<h4> Training Entity </h4>
 		<ul>
-			<li>trainingid primary key</li>
+			<li>trainingIdPrimaryKey </li>
+			<li>trainingMemberIDForiegnkey </li>
+			<li>trainingInstructorIDForiegnKey</li>
 			<li>trainingDays</li>
-			<li>costoftraining</li>
-			<li>trainingtime</li>
+			<li>costofTraining</li>
+			<li>trainingTime</li>
 		</ul>
+		<h4>Instuctor Entity</h4>
+		<ul>
+		<li>instructorIDPimaryKey</li>
+		<li>instructorFirstName</li>
+		<li>instructorLastName</li>
+		<li>instructorPhoneNumber</li>
+		</ul>
+
+
 		<h2>Relations</h2>
 		<ul>
 			<li>One Member can take many Training sessions 1-n</li>
 			<li>Many Members can take many Training sessions m-n</li>
+			<li>One Instuctor can train many members 1-m</li>
 		</ul>
+
 
 	</body>
 	</html>
