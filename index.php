@@ -50,6 +50,13 @@
 			<li>memberState</li>
 			<li>memberZip</li>
 		</ul>
+		<h4>Instuctor Entity</h4>
+		<ul>
+		<li>instructorID PimaryKey</li>
+		<li>instructorFirstName</li>
+		<li>instructorLastName</li>
+		<li>instructorPhoneNumber</li>
+		</ul>
 		<h4> Training Entity </h4>
 		<ul>
 			<li>trainingID PrimaryKey </li>
@@ -58,13 +65,6 @@
 			<li>trainingDays</li>
 			<li>trainingcostofTraining</li>
 			<li>trainingTime</li>
-		</ul>
-		<h4>Instuctor Entity</h4>
-		<ul>
-		<li>instructorID PimaryKey</li>
-		<li>instructorFirstName</li>
-		<li>instructorLastName</li>
-		<li>instructorPhoneNumber</li>
 		</ul>
 		<h2>Relations</h2>
 		<ul>
