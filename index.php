@@ -49,7 +49,6 @@
 			<li>memberStreet</li>
 			<li>memberState</li>
 			<li>memberZip</li>
-			<li>memberFee</li>
 		</ul>
 		<h4> Training Entity </h4>
 		<ul>
@@ -62,13 +61,11 @@
 		</ul>
 		<h4>Instuctor Entity</h4>
 		<ul>
-		<li>instructorIDPimaryKey</li>
+		<li>instructorID PimaryKey</li>
 		<li>instructorFirstName</li>
 		<li>instructorLastName</li>
 		<li>instructorPhoneNumber</li>
 		</ul>
-
-
 		<h2>Relations</h2>
 		<ul>
 			<li>One Member can take many Training sessions 1-n</li>
