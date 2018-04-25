@@ -17,7 +17,7 @@
 		$query = "DELETE FROM member WHERE memberId = :memberId";
 		$statement = $pdo->prepare($query);
 
-		// bind the member variables to the place holder in the template
+		// bind the member variables to the place holder in the template.
 		$parameters = ["memberId" => $this->memberId->getBytes()];
 		$statement->execute($parameters);
 	}
