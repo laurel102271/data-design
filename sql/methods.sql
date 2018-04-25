@@ -1,6 +1,6 @@
 NSERT INTO member(memberId,memberLastName,memberFirstName, memberStreet, memberState, memberZip)
 
-VALUES(UNHEX(REPLACE("f6d46fac-c4a0-49c6-bc70-fb0fbeeacb6b", "-", "")), "012345", "jullyanejgf@gmail.com", "67890", "jully");
+VALUES(UNHEX(REPLACE("f6d46fac-c4a0-49c6-bc70-fb0fbeeacb6b", "-", "")), "012345", "invest102271@gmail.com", "67890", "");
 
 
 
