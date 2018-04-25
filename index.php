@@ -70,7 +70,7 @@
 		<ul>
 			<li>One Member can take many Training sessions 1-n</li>
 			<li>Many Members can take many Training sessions m-n</li>
-			<li>One Instuctor can train many members 1-m</li>
+			<li>One Instuctor can train many members 1-m.</li>
 		</ul>
 
 
