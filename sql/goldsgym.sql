@@ -1,8 +1,8 @@
-ALTER DATABASE your_database_name_CHANGE_ME CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+ALTER DATABASE dmartinez633 CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
-DROP TABLE IF EXISTS `member`;
-DROP TABLE IF EXISTS Instructor;
 DROP TABLE IF EXISTS training;
+DROP TABLE IF EXISTS Instructor;
+DROP TABLE IF EXISTS member;
 
 
 CREATE TABLE member (
@@ -17,21 +17,20 @@ CREATE TABLE member (
 );
 
 
-CREATE TABLE `instructor` (
+CREATE TABLE instructor (
 	instructorId BINARY(16) NOT NULL,
-	instructorLastName VARCHAR (12)NOT NULL,
 	InstructorFirstNameId BINARY(16) NOT NULL,
 	InstructorLastName VARCHAR(12) NOT NULL,
 	PRIMARY KEY(instructorId)
 );
 CREATE TABLE trainig (
-	trainigId BINARY(16) NOT NULL,
-	trainigMemberId BINARY(16) NOT NULL,
+	trainingId BINARY(16) NOT NULL,
+	trainingMemberId BINARY(16) NOT NULL,
 	trainingInstructorId BINARY(16) NOT NULL,
 	trainigDays VARCHAR(7) NOT NULL,
 	INDEX(trainingMemberId),
-	INDEX(trainigInstructorId),
+	INDEX(trainingInstructorId),
 	FOREIGN KEY(trainingMemberId) REFERENCES member(memberId),
-	FOREIGN KEY (trainigInstructorId) REFERENCES training (trainigId)
+	FOREIGN KEY (trainingInstructorId) REFERENCES training (trainigId)
 	PRIMARY KEY(trainingId)
 );
